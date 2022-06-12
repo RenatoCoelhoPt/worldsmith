@@ -1,6 +1,6 @@
 class AddCharactersGroups < ActiveRecord::Migration[7.0]
   def self.up
-    create_table :characters_groups, :id => false do |t|
+    create_table :characters_groups, id: false do |t|
       t.integer :character_id
       t.integer :group_id
     end
@@ -10,4 +10,3 @@ class AddCharactersGroups < ActiveRecord::Migration[7.0]
     drop_table :categories_items
   end
 end
-
