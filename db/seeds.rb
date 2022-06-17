@@ -16,18 +16,18 @@ ravenclaw_characters = ['Eleanora Mistral']
 hufflepuff_characters = ['Cassandra Caldrune']
 gryffindor_characters = ['Patricia Medows', 'Albus Dumbledore']
 
-slytherin_characters.each do |name|
-  Character.create({ name: name, groups: [slytherin_group]})
+slytherin_characters.each do |char_name|
+  Character.create({ name: char_name, groups: [slytherin_group] })
 end
 
-ravenclaw_characters.each do |name|
-  Character.create({ name: name, groups: [ravenclaw_group]})
+ravenclaw_characters.each do |char_name|
+  Character.create({ name: char_name, groups: [ravenclaw_group] })
 end
 
-hufflepuff_characters.each do |name|
-  Character.create({ name: name, groups: [hufflepuff_group]})
+hufflepuff_characters.each do |char_name|
+  Character.create({ name: char_name, groups: [hufflepuff_group] })
 end
 
-gryffindor_characters.each do |name|
-  Character.create({ name: name, groups: [gryffindor_group]})
+gryffindor_characters.each do |char_name|
+  Character.create({ name: char_name, groups: [gryffindor_group] })
 end

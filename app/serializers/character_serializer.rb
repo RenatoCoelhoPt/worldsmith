@@ -2,5 +2,5 @@ class CharacterSerializer
   include FastJsonapi::ObjectSerializer
   attributes :name, :image_url
 
-  has_and_belongs_to_many :groups
+  has_many :groups
 end

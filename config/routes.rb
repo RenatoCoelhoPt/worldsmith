@@ -6,13 +6,9 @@ Rails.application.routes.draw do
 
   root 'pages#index'
 
-  namespace :api do
-    namespace :v1 do
-      resources :characters, only: %i[index show create update destroy]
-      resources :groups, only: %i[index show create update destroy]
-    end
-  end
+  resources :characters, only: %i[index show create update destroy]
+  resources :groups, only: %i[index show create update destroy]
 
-  #redirects all requests to unexisting routes to root
+  # redirects all requests to unexisting routes to root
   get '*path', to: 'pages#index', via: :all
 end
