@@ -14,7 +14,6 @@ class CharactersController < ApplicationController
   end
 
   def create
-    byebug
     character = Character.new(character_params)
 
     if character.save
